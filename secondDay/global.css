@@ -24,8 +24,20 @@ thead, tfoot {
     text-indent: 0rem;
     padding: 0;
 }
-
-.bigger {
+th img {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+.wrap {
+    position: relative;
+    display: inline-block;
+    height: 85px;
+    line-height: 85px;
+}
+.bigger p{
     display: inline-block;
     height: 85px;
     font: bold 36px/85px sans-serif;
