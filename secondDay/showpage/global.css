@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0 auto;
+}
+html, body {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #FF4C4F;
+}
+.wrap {
+    position: relative;
+    padding: 0px 80px;
+    color: #f2f2f2;
+}
+.header div p{
+    display: inline-block;
+    height: 30px;
+    line-height: 50px;
+}
+.left-header {
+    font-size: 14px;
+    float: left;
+}
+.right-header {
+    font-size: 14px;
+    float: right;
+}
+.footer {
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #810014;
+    color: #f2f2f2;
+    text-align: center;
+}
+.info-group {
+    position: relative;
+    margin: 20px 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.info-tite {
+    font: bold 16px/20px sans-serif;
+    margin-bottom: 20px;
+}
+.info-tite::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 30px);
+    height: 5px;
+    width: 60px;
+    background-color: #810014;
+}
+.show-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.show-item {
+    position: relative;
+    width: 200px;
+    max-height: 320px;
+    border: solid 1px grey;
+}
+.show-item:not(last-child) {
+    margin-right: 20px;
+}
+.show-item img{
+    position: relative;
+    top: 5px;
+    max-width: 180px;
+    max-height: 280px;
+}
+.show-item p {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px;
+}
+.self-desc {
+    height: 180px;
+    padding: 50px 120px;
+    border-bottom: solid 1px black;
+    background-color: #810014;
+    color: #f2f2f2;
+}
+.self-desc img {
+    display: inline-block;
+    float: right;
+    width: 180px;
+    height: 180px;
+}
+.self-wrap p {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+    max-width: 450px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+.self-wrap {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    padding: 10px 80px;
+    justify-content: center;
+}
+a, a:visited, a:link {
+    color: white;
+}
