@@ -75,11 +75,13 @@ body, html {
     text-align: left;
     list-style: none;
 }
-.col-li {
+.col-li{
     text-indent: 12px;
     line-height: 32px;
     font-weight: bold;
     font-size: 14px;
+}
+.col-li:not(:last-child ){
     /* width: 180px; */
     border-bottom: solid 1px black;
 }
@@ -133,9 +135,10 @@ tr td:last-child::before{
 .info-content::first-letter {
     font-size: 32px;
 }
-a, a:hover {
-    color: black;
-}
 a:visited {
     color: grey;
 }
+a, a:hover, .col-li:hover {
+    color: black;
+}
+
