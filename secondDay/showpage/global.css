@@ -73,6 +73,7 @@ html, body {
     width: 200px;
     max-height: 320px;
     border: solid 1px grey;
+    margin-bottom: 10px;
 }
 .show-item:not(last-child) {
     margin-right: 20px;
@@ -120,4 +121,21 @@ html, body {
 }
 a, a:visited, a:link {
     color: white;
+}
+@media (max-width: 800px){
+    .self-desc {
+        padding: 0px;
+    }
+    .self-desc img {
+        display: none;
+    }
+    .self-wrap {
+        padding: 0;
+    }
+    .self-wrap p {
+        font-size: 12px;
+        padding: 0px 10px;
+        text-indent: 2em;
+        margin: 20px;
+    }
 }
