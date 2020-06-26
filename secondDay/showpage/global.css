@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0 auto;
+}
+html, body {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+.row {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #FF4C4F;
+    margin-bottom: 10px;
+}
+.wrap {
+    position: relative;
+    left: calc(50% - 600px);
+    width: 1200px;
+    color: #f2f2f2;
+}
+.header div p{
+    display: inline-block;
+    height: 30px;
+    line-height: 50px;
+}
+.left-header {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+.right-header {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    font-size: 14px;
+}
+.dropDone {
+    display: none;
+}
+#dropMenu {
+    position: absolute;
+    top: 38px;
+    left: -74px;
+    display: none;
+    list-style: none;
+    text-align: center;
+    z-index: 999;
+}
+#dropMenu li, #dropMenu a{
+    display: inline-block;
+    padding: 2px 5px;
+    min-width: 80px;
+    color: white;
+    text-decoration: none;
+    background-color: #810014;
+}
+#dropBtn {
+    position: relative;
+    top: 2px;
+    padding: 0px 10px;
+    background-color: #810014;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+
+.footer {
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #810014;
+    color: #f2f2f2;
+    text-align: center;
+}
+.info-group {
+    position: relative;
+    margin: 0px;
+    display: inline-block;
+    width: 1200px;
+    text-align: center;
+}
+.info-tite {
+    font: bold 16px/20px sans-serif;
+    margin-bottom: 20px;
+}
+.info-tite::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 30px);
+    height: 5px;
+    width: 60px;
+    background-color: #810014;
+}
+.show-group {
+    margin-top: 40px;
+}
+.show-item {
+    display: inline-block;
+    position: relative;
+    width: calc(25% - 27px);
+    max-height: 320px;
+    border: solid 1px grey;
+    margin-bottom: 10px;
+}
+.show-item:not(:nth-child(4n+0)) {
+    margin-right: 28px;
+}
+.show-item img{
+    position: relative;
+    top: 5px;
+    width: 120px;
+}
+.show-item p {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px;
+}
+.self-desc {
+    position: relative;
+    height: 240px;
+    width: 100%;
+    border-bottom: solid 1px black;
+    background-color: #810014;
+    color: #f2f2f2;
+    text-align: center;
+}
+.self-desc img {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 180px;
+    height: 180px;
+}
+.self-wrap {
+    position: relative;
+    display: inline-block;
+    width: 1200px;
+    text-align: left;
+    font-size: 16px;
+}
+.self-wrap p {
+    position: absolute;
+    top: 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 450px;
+}
+
+a, a:visited, a:link {
+    color: white;
+}
+@media (min-width:790px) and (max-width: 1250px){
+    .wrap{
+        width: 800px;
+        left: calc(50% - 400px);
+    }
+    .info-group {
+        width: 800px;
+    }
+    .self-wrap {
+        width: 800px;
+    }
+    .show-item img {
+        max-width: 160px;
+    }
+}
+@media (max-width: 800px){
+    .wrap{
+        width: 600px;
+        left: calc(50% - 300px);
+    }
+    .info-group {
+        width: 600px;
+    }
+    .self-wrap {
+        width: 600px;
+    }
+    .show-item img {
+        max-width: 120px;
+    }
+    .show-item:not(:nth-child(4n+0)) {
+        margin-right: 28px;
+    }
+    .self-wrap p {
+        max-width: 360px;
+        text-indent: 2rem;
+        font-size: 16px;
+    }
+}
+@media (max-width: 670px){
+    .dropDone {
+        display: inline-block;
+    }
+    .common-p, .common-p a {
+        display: none;
+    }
+    .wrap{
+        width: 380px;
+        left: calc(50% - 190px);
+    }
+    .info-group {
+        width: 380px;
+    }
+    .self-wrap {
+        width: 380px;
+    }
+    .show-item {
+        width: calc(45% - 27px);
+    }
+    .show-item img {
+        max-width: 110px;
+    }
+    .show-item:not(:nth-child(4n+0)) {
+        margin-right: 0px;
+    }
+    .show-item:nth-child(odd){
+        margin-right: 83px;
+    }
+    .self-wrap p {
+        max-width: 220px;
+        text-indent: 2rem;
+        font-size: 12px;
+    }
+    .self-wrap img {
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 375px){
+    .dropDone {
+        display: inline-block;
+    }
+    .common-p, .common-p a {
+        display: none;
+    }
+    .wrap{
+        width: 340px;
+        left: calc(50% - 170px);
+    }
+    .info-group {
+        width: 380px;
+    }
+    .self-wrap {
+        width: 380px;
+    }
+    .show-item {
+        width: calc(45% - 27px);
+    }
+    .show-item img {
+        max-width: 110px;
+    }
+    .show-item:not(:nth-child(4n+0)) {
+        margin-right: 0px;
+    }
+    .show-item:nth-child(odd){
+        margin-right: 53px;
+    }
+    .self-wrap p {
+        left: 20px;
+        max-width: 200px;
+        text-indent: 2rem;
+        font-size: 12px;
+    }
+    .self-wrap img {
+        right: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    .self-desc {
+        height: 180px;
+    }
+}
+@media (max-width: 320px){
+    .dropDone {
+        display: inline-block;
+    }
+    .common-p, .common-p a {
+        display: none;
+    }
+    .wrap{
+        width: 260px;
+        left: calc(50% - 130px);
+    }
+    .info-group {
+        width: 320px;
+    }
+    .self-wrap {
+        width: 320px;
+    }
+    .show-item {
+        width: calc(45% - 27px);
+    }
+    .show-item img {
+        max-width: 110px;
+    }
+    .show-item:not(:nth-child(4n+0)) {
+        margin-right: 0px;
+    }
+    .self-desc {
+        height: 180px;
+    }
+    .show-item:nth-child(odd){
+        margin-right: 10px;
+    }
+    .self-wrap p {
+        left: 10px;
+        max-width: 180px;
+        text-indent: 2rem;
+        font-size: 12px;
+    }
+    .self-wrap img {
+        right: 10px;
+        width: 100px;
+        height: 100px;
+    }
+}
