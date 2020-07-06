@@ -1,0 +1,73 @@
+#header-main-div {
+    position: relative;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
+    padding: 5px 120px;
+}
+#header-main-div.sticky {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.2);
+    animation: down 0.4s ease-out forwards;
+    z-index: 999;
+}
+.header-img {
+    position: relative;
+    display: inline-block;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 140px;
+    height: 45px;
+    color: black;
+    img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+}
+.header-menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.header-dropdown {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    color: black;
+    transition: all 0.4s ease-out;
+    background-color: #D7D7D7;
+}
+.header-dropdown:active {
+    color: #40a9ff;
+    background-color: #f2f2f2;
+}
+.sl-menu-item {
+    font-size: 14px;
+    font-weight: bold;
+}
+@media ( min-width:400px ) and ( max-width: 448px ) {
+    .header-img {
+        width: 120px;
+        height: 45px;
+    }
+    #header-main-div {
+        padding: 5px 20px;
+    }
+}
+@keyframes down{
+    0%{
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
