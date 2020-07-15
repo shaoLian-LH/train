@@ -1,0 +1,59 @@
+#login-main-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba( 178, 182, 184, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.login-title {
+    font-weight: bolder;
+    font-size: 22px;
+}
+.ant-form-item-control-input {
+    width: 100%;
+    padding: 0px 20px
+}
+.login-form {
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    width: 350px;
+    left: calc(50% - 175px);
+    height: 240px;
+    padding: 10px 0px;
+    background-color: rgba( 240, 242, 245, 1);
+}
+.close-btn {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+    &:hover {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+}
+
+@media ( min-width:400px ) and ( max-width: 1200px ) {
+    .login-form {
+        top: 125px;
+        .login-title {
+            font-size: 14px;
+        }
+        height: 280px;
+        padding: 10px 20px;
+    }
+    .close-btn {
+        right: 14px;
+        top: 14px;
+        
+    }
+}

@@ -1,0 +1,42 @@
+html, body{
+    position: relative;
+    margin: 0;
+    padding: auto;
+    text-align: left;
+}
+#main{
+    padding-left: 8px;
+}
+.page-title {
+    color: black;
+    font: bold 26px/30px sans-serif;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.common-line {
+    font-weight: bold;
+}
+.common-line a{
+    color: inherit;
+    text-decoration: none;
+}
+a {
+    transition: all 0.4s ease-out;
+}
+a:visited:hover {
+    color: black;
+    opacity: 1;
+}
+a:visited {
+    color: grey;
+    opacity: 0.8;
+}
+.bigger {
+    font: bold 26px/26px sans-serif;
+}
+.red-line {
+    color: red;
+}
